@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -34,7 +34,7 @@ namespace Omicron.Acoes
 
             var imText = Convert.ToBase64String(array);
 
-            hdManipulado.Imagem.NomeImagem = imagem.Split('.')[0];
+            hdManipulado.Imagem.NomeImagem = nomeImagem;
             hdManipulado.Imagem.ImagemTexto = imText;
 
             File.Delete(hd + ".txt");
