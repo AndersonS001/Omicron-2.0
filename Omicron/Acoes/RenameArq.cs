@@ -72,7 +72,7 @@ namespace Omicron.Acoes
                 {
                     foreach (var item1 in item.SubPasta)
                     {
-                        foreach (var item2 in item.Arquivos)
+                        foreach (var item2 in item1.Arquivos)
                         {
                             if (item2.NomeArquivo.Equals(nomeArq))
                             {

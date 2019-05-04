@@ -66,6 +66,26 @@ namespace Omicron.Acoes
                     CreateHd.CriaHdComJson(hdManipulado, hd, hdManipulado.Tamanho);
                 }
             }
+            else if (context.Count == 3)
+            {
+                foreach (var item in hdManipulado.Diretorio)
+                {
+                    foreach (var item1 in item.SubPasta)
+                    {
+                        if (item1.NomeDiretorio.Equals(nomeDir))
+                        {
+                            item1.NomeDiretorio = nomeDirNovo;
+                            achou = true;
+                        }
+                    }
+                }
+
+                if (achou)
+                {
+                    File.Delete(hd + ".txt");
+                    CreateHd.CriaHdComJson(hdManipulado, hd, hdManipulado.Tamanho);
+                }
+            }
             else
             {
                 foreach (var item in hdManipulado.Diretorio)

@@ -53,19 +53,17 @@ namespace Omicron.Acoes
             {
                 foreach (var item in hdManipulado.Diretorio)
                 {
-                    if (item.NomeDiretorio.Equals(nomeDir))
+                    foreach (var item2 in item.SubPasta)
                     {
-                        diretorio = item;
-                        achou = true;
+                        if (item2.NomeDiretorio.Equals(nomeDir))
+                        {
+                            diretorio = item;
+
+                            item.SubPasta.Remove(item2);
+                            File.Delete(hd + ".txt");
+                            CreateHd.CriaHdComJson(hdManipulado, hd, hdManipulado.Tamanho);
+                        }
                     }
-                }
-
-                if (achou)
-                {
-                    hdManipulado.Diretorio.Remove(diretorio);
-                    File.Delete(hd + ".txt");
-
-                    CreateHd.CriaHdComJson(hdManipulado, hd, hdManipulado.Tamanho);
                 }
             }
             else
@@ -76,18 +74,11 @@ namespace Omicron.Acoes
                     {
                         if (item1.NomeDiretorio.Equals(context.Last()))
                         {
-                            diretorio = item1;
-                            achou = true;
+                            item.SubPasta.Remove(item1);
+                            File.Delete(hd + ".txt");
+                            CreateHd.CriaHdComJson(hdManipulado, hd, hdManipulado.Tamanho);
                         }
                     }
-                }
-
-                if (achou)
-                {
-                    hdManipulado.Diretorio.Remove(diretorio);
-                    File.Delete(hd + ".txt");
-
-                    CreateHd.CriaHdComJson(hdManipulado, hd, hdManipulado.Tamanho);
                 }
             }
         }

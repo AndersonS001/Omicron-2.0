@@ -1,64 +1,6 @@
 ﻿{
   "NomeHd": "hd1",
   "Tamanho": 32768,
-  "Arquivos": [
-    {
-      "NomeArquivo": "arq",
-      "ValorArquivo": "ksks"
-    }
-  ],
-  "Diretorio": [
-    {
-      "NomeDiretorio": "pasta",
-      "Arquivos": [
-        {
-          "NomeArquivo": "arq00",
-          "ValorArquivo": "0000"
-        }
-      ],
-      "SubPasta": [
-        {
-          "NomeDiretorio": "pasta1",
-          "Arquivos": [
-            {
-              "NomeArquivo": "arq11",
-              "ValorArquivo": "1111"
-            }
-          ],
-          "SubPasta": [
-            {
-              "NomeDiretorio": "pasta11",
-              "Arquivos": [
-                {
-                  "NomeArquivo": "arq111",
-                  "ValorArquivo": "11"
-                }
-              ],
-              "SubPasta": []
-            },
-            {
-              "NomeDiretorio": "pasta12",
-              "Arquivos": [
-                {
-                  "NomeArquivo": "arq12",
-                  "ValorArquivo": "12"
-                }
-              ],
-              "SubPasta": []
-            }
-          ]
-        },
-        {
-          "NomeDiretorio": "pasta2",
-          "Arquivos": [
-            {
-              "NomeArquivo": "arq2",
-              "ValorArquivo": "2222"
-            }
-          ],
-          "SubPasta": []
-        }
-      ]
-    }
-  ]
+  "Arquivos": [],
+  "Diretorio": []
 }
