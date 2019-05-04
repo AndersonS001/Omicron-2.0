@@ -11,7 +11,7 @@ public class HD
 
     public String NomeHd { get; set; }
     public int Tamanho { get; set; }
-    
+    public Imagem Imagem { get; set; }
     public List<Arquivo> Arquivos { get; set; }
     public List<Diretorio> Diretorio { get; set; }
 }

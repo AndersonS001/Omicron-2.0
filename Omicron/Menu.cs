@@ -119,6 +119,22 @@ public class Menu
                         else
                             Console.WriteLine("Por favor, selecione um hd");
                         break;
+                    case "copyfrom":
+                        if (!String.IsNullOrEmpty(hdSelecionado))
+                        {
+                            CopyFrom.PegaImagem(comand[1], comand[2], contexto.Replace(">", ""));
+                        }
+                        else
+                            Console.WriteLine("Por favor, selecione um hd");
+                        break;
+                    case "copyto":
+                        if (!String.IsNullOrEmpty(hdSelecionado))
+                        {
+                            CopyTo.EnviaImagem(comand[1], comand[2], contexto.Replace(">", ""));
+                        }
+                        else
+                            Console.WriteLine("Por favor, selecione um hd");
+                        break;
                     case "removehd":
                         RemoveHd.RemoverHd(comand[1]);
                         break;

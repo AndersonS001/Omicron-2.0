@@ -23,6 +23,7 @@ namespace Omicron.Acoes
             HD hd = new HD();
             hd.NomeHd = nome;
             hd.Tamanho = buffer;
+            hd.Imagem = new Imagem();
 
             JsonSerializer serializer = new JsonSerializer();
             serializer.Converters.Add(new JavaScriptDateTimeConverter());
