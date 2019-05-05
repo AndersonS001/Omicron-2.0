@@ -8,15 +8,6 @@ namespace Omicron.Acoes
 {
     public static class CreateHd
     {
-        //public string Nome { get; set; }
-        //public int Buffer { get; set; }
-
-        //public CreateHd(string nome, int buffer)
-        //{
-        //    Nome = nome;
-        //    Buffer = buffer;
-        //}
-
         public static void CriarHd(string nome, int buffer, bool atualizaMain = false)
         {
             Stream saida = File.Open(nome + ".txt", FileMode.Create);
@@ -24,6 +15,7 @@ namespace Omicron.Acoes
             hd.NomeHd = nome;
             hd.Tamanho = buffer;
             hd.Imagem = new Imagem();
+            hd.StatusHd = new StatusHD();
 
             JsonSerializer serializer = new JsonSerializer();
             serializer.Converters.Add(new JavaScriptDateTimeConverter());

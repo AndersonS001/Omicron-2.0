@@ -63,12 +63,14 @@
     <Compile Include="Acoes\RenameDir.cs" />
     <Compile Include="Acoes\Rmdir.cs" />
     <Compile Include="Acoes\SelectHd.cs" />
+    <Compile Include="Acoes\StatusHd.cs" />
     <Compile Include="Acoes\TypeArq.cs" />
     <Compile Include="Acoes\TypeHd.cs" />
     <Compile Include="DTO\Arquivo.cs" />
     <Compile Include="DTO\Diretorio.cs" />
     <Compile Include="DTO\Hd.cs" />
     <Compile Include="DTO\Imagem.cs" />
+    <Compile Include="DTO\StatusHd.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

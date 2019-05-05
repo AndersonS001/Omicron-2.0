@@ -52,6 +52,9 @@ public class Menu
                     case "formathd":
                         FormatHd.FormatarHd(comand[1]);
                         break;
+                    case "statushd":
+                        StatusHd.Status(comand[1]);
+                        break;
                     case "typehd":
                         TypeHd.ImprimeTudo(comand[1]);
                         break;
@@ -155,7 +158,7 @@ public class Menu
                         break;
                 }
             }
-            catch (Exception)
+            catch (Exception e)
             {
 
             }

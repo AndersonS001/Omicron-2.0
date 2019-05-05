@@ -24,7 +24,10 @@ namespace Omicron.Acoes
             };
 
             if (context.Length == 1)
+            {
                 hdManipulado.Diretorio.Add(diretorio);
+                hdManipulado.StatusHd.NumeroPasta++;
+            }
             else if (context.Length == 2)
             {
                 foreach (var item in hdManipulado.Diretorio)
@@ -32,6 +35,7 @@ namespace Omicron.Acoes
                     if (item.NomeDiretorio.Equals(context[1]))
                     {
                         item.SubPasta.Add(diretorio);
+                        hdManipulado.StatusHd.NumeroPasta++;
                     }
                 }
             }
@@ -44,6 +48,7 @@ namespace Omicron.Acoes
                         if (item1.NomeDiretorio.Equals(context.Last()))
                         {
                             item1.SubPasta.Add(diretorio);
+                            hdManipulado.StatusHd.NumeroPasta++;
                         }
                     }
                 }

@@ -4,8 +4,8 @@ C:\Users\ander\source\repos\Omicron\Omicron\bin\Debug\Omicron.pdb
 C:\Users\ander\source\repos\Omicron\Omicron\bin\Debug\Newtonsoft.Json.dll
 C:\Users\ander\source\repos\Omicron\Omicron\bin\Debug\Newtonsoft.Json.pdb
 C:\Users\ander\source\repos\Omicron\Omicron\bin\Debug\Newtonsoft.Json.xml
-C:\Users\ander\source\repos\Omicron\Omicron\obj\Debug\Omicron.csprojAssemblyReference.cache
 C:\Users\ander\source\repos\Omicron\Omicron\obj\Debug\Omicron.csproj.CoreCompileInputs.cache
 C:\Users\ander\source\repos\Omicron\Omicron\obj\Debug\Omicron.csproj.CopyComplete
 C:\Users\ander\source\repos\Omicron\Omicron\obj\Debug\Omicron.exe
 C:\Users\ander\source\repos\Omicron\Omicron\obj\Debug\Omicron.pdb
+C:\Users\ander\source\repos\Omicron\Omicron\obj\Debug\Omicron.csprojAssemblyReference.cache

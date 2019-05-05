@@ -1,7 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 
 namespace Omicron.Acoes
 {
@@ -30,20 +29,22 @@ namespace Omicron.Acoes
                 hdManipulado.Arquivos = new List<Arquivo>();
 
             if (context.Length == 1)
+            {
                 hdManipulado.Arquivos.Add(arquivo);
+                hdManipulado.StatusHd.NumeroArquivos++;
+            }
             else if (context.Length == 2)
             {
-                Diretorio ax = hdManipulado.Diretorio.Find(x => x.NomeDiretorio.Equals(context.Last()));
-
                 foreach (var item in hdManipulado.Diretorio)
                 {
                     if (item.NomeDiretorio.Equals(context[1]))
                     {
                         item.Arquivos.Add(arquivo);
+                        hdManipulado.StatusHd.NumeroArquivos++;
                     }
                 }
             }
-            else if(context.Length == 3)
+            else if (context.Length == 3)
             {
                 foreach (var item in hdManipulado.Diretorio)
                 {
@@ -52,6 +53,7 @@ namespace Omicron.Acoes
                         if (item1.NomeDiretorio.Equals(context[2]))
                         {
                             item1.Arquivos.Add(arquivo);
+                            hdManipulado.StatusHd.NumeroArquivos++;
                         }
                     }
                 }
@@ -67,6 +69,7 @@ namespace Omicron.Acoes
                             if (item2.NomeDiretorio.Equals(context[3]))
                             {
                                 item2.Arquivos.Add(arquivo);
+                                hdManipulado.StatusHd.NumeroArquivos++;
                             }
                         }
                     }
