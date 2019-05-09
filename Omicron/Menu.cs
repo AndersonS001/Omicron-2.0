@@ -138,6 +138,14 @@ public class Menu
                         else
                             Console.WriteLine("Por favor, selecione um hd");
                         break;
+                    case "tree":
+                        if (!String.IsNullOrEmpty(hdSelecionado))
+                        {
+                            Tree.Arvore(hdSelecionado, contexto.Replace(">", ""));
+                        }
+                        else
+                            Console.WriteLine("Por favor, selecione um hd");
+                        break;
                     case "removehd":
                         RemoveHd.RemoverHd(comand[1]);
                         break;
@@ -160,7 +168,7 @@ public class Menu
             }
             catch (Exception e)
             {
-
+                Console.WriteLine("....");
             }
         }
     }

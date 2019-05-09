@@ -31,6 +31,7 @@ namespace Omicron.Acoes
                             arquivo = item;
 
                             hdManipulado.Arquivos.Remove(arquivo);
+                            hdManipulado.StatusHd.NumeroArquivos--;
                             File.Delete(hd + ".txt");
 
                             CreateHd.CriaHdComJson(hdManipulado, hd, hdManipulado.Tamanho);
@@ -47,7 +48,7 @@ namespace Omicron.Acoes
                             {
                                 arquivo = item1;
                                 item.Arquivos.Remove(item1);
-
+                                hdManipulado.StatusHd.NumeroArquivos--;
                                 File.Delete(hd + ".txt");
                                 CreateHd.CriaHdComJson(hdManipulado, hd, hdManipulado.Tamanho);
                             }
@@ -65,7 +66,7 @@ namespace Omicron.Acoes
                                 if (item2.NomeArquivo.Equals(nome))
                                 {
                                     arquivo = item2;
-
+                                    hdManipulado.StatusHd.NumeroArquivos--;
                                     item1.Arquivos.Remove(item2);
                                     File.Delete(hd + ".txt");
                                     CreateHd.CriaHdComJson(hdManipulado, hd, hdManipulado.Tamanho);
@@ -86,6 +87,7 @@ namespace Omicron.Acoes
                                 {
                                     if (item3.NomeArquivo.Equals(nome))
                                     {
+                                        hdManipulado.StatusHd.NumeroArquivos--;
                                         item2.Arquivos.Remove(item3);
                                         File.Delete(hd + ".txt");
                                         CreateHd.CriaHdComJson(hdManipulado, hd, hdManipulado.Tamanho);
@@ -98,7 +100,7 @@ namespace Omicron.Acoes
             }
             catch (Exception)
             {
-                Console.WriteLine("Arquivo não encontrado");
+                //Console.WriteLine("Arquivo não encontrado");
             }
         }
     }

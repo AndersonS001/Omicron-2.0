@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace Omicron.Acoes
 {
@@ -68,10 +69,13 @@ namespace Omicron.Acoes
                 {
                     foreach (var item1 in item.SubPasta)
                     {
-                        if (item1.NomeDiretorio.Equals(nomeDir))
+                        foreach (var item2 in item1.SubPasta)
                         {
-                            item1.NomeDiretorio = nomeDirNovo;
-                            achou = true;
+                            if (item2.NomeDiretorio.Equals(nomeDir))
+                            {
+                                item2.NomeDiretorio = nomeDirNovo;
+                                achou = true;
+                            }
                         }
                     }
                 }
