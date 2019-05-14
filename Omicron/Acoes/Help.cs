@@ -40,7 +40,7 @@ namespace Omicron.Acoes
                 foreach (var item in help.Keys)
                 {
                     var text = help[item];
-                    Console.WriteLine(item + "             " + text.Substring(0, text.IndexOf("Sintaxe")));
+                    Console.WriteLine(item.PadRight(20,' ') + text.Substring(0, text.IndexOf("Sintaxe")));
                 }
             }
             else
