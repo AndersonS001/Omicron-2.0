@@ -49,6 +49,14 @@ public class Menu
                     case "dirhd":
                         DirHd.ListaHd();
                         break;
+                    case "help":
+                        var com = "";
+
+                        if (comand.Length > 1)
+                            com = comand[1];
+
+                        Help.Ajuda(com);
+                        break;
                     case "formathd":
                         FormatHd.FormatarHd(comand[1]);
                         break;

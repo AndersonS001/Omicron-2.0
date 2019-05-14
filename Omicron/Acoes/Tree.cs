@@ -21,10 +21,10 @@ namespace Omicron.Acoes
             using (StreamReader sr = new StreamReader(arq))
             {
                 var json = sr.ReadToEnd();
-                hdManipulado = JsonConvert.DeserializeObject<HD>(json);             
+                hdManipulado = JsonConvert.DeserializeObject<HD>(json);
             }
 
-            if (context.Count == 2)
+            if (context.Count <= 2)
             {
                 foreach (var item in hdManipulado.Diretorio)
                 {
@@ -48,25 +48,28 @@ namespace Omicron.Acoes
                     }
                 }
             }
-           else if (context.Count == 3)
+            else if (context.Count == 3)
             {
                 foreach (var item in hdManipulado.Diretorio)
                 {
                     //Console.WriteLine("─" + item.NomeDiretorio);
                     foreach (var item1 in item.SubPasta)
                     {
-                        Console.Write(" │");
-                        Console.WriteLine("───" + item1.NomeDiretorio);
-                        foreach (var item2 in item1.SubPasta)
+                        if (item1.NomeDiretorio.Equals(context.Last()))
                         {
-                            Console.Write(" │");
-                            Console.Write("   │");
-                            Console.WriteLine("──────" + item2.NomeDiretorio);
-                            foreach (var item3 in item2.SubPasta)
+                            //Console.Write(" │");
+                            Console.WriteLine("───" + item1.NomeDiretorio);
+                            foreach (var item2 in item1.SubPasta)
                             {
-                                Console.Write(" │");
+                                //Console.Write(" │");
                                 Console.Write("   │");
-                                Console.WriteLine("─────────" + item3.NomeDiretorio);
+                                Console.WriteLine("──────" + item2.NomeDiretorio);
+                                foreach (var item3 in item2.SubPasta)
+                                {
+                                    Console.Write(" │");
+                                    Console.Write("   │");
+                                    Console.WriteLine("─────────" + item3.NomeDiretorio);
+                                }
                             }
                         }
                     }

@@ -5,37 +5,9 @@
   "StatusHd": {
     "EspacoUtilizadoDiretorio": 0,
     "EspacoUtilizadoArquivo": 0,
-    "NumeroPasta": 5,
+    "NumeroPasta": 0,
     "NumeroArquivos": 0
   },
   "Arquivos": [],
-  "Diretorio": [
-    {
-      "NomeDiretorio": "pasta",
-      "Arquivos": [],
-      "SubPasta": [
-        {
-          "NomeDiretorio": "pasta1",
-          "Arquivos": [],
-          "SubPasta": [
-            {
-              "NomeDiretorio": "pasta11",
-              "Arquivos": [],
-              "SubPasta": []
-            },
-            {
-              "NomeDiretorio": "pasta12",
-              "Arquivos": [],
-              "SubPasta": []
-            }
-          ]
-        },
-        {
-          "NomeDiretorio": "pasta2",
-          "Arquivos": [],
-          "SubPasta": []
-        }
-      ]
-    }
-  ]
+  "Diretorio": []
 }
