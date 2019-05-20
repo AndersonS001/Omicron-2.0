@@ -146,6 +146,22 @@ public class Menu
                         else
                             Console.WriteLine("Por favor, selecione um hd");
                         break;
+                    case "copy":
+                        if (!String.IsNullOrEmpty(hdSelecionado))
+                        {
+                            Copy.Copia(contexto.Replace(">",""),comand[1], comand[2]);
+                        }
+                        else
+                            Console.WriteLine("Por favor, selecione um hd");
+                        break;
+                    case "move":
+                        if (!String.IsNullOrEmpty(hdSelecionado))
+                        {
+                            Move.Movimenta(contexto.Replace(">", ""), comand[1], comand[2]);
+                        }
+                        else
+                            Console.WriteLine("Por favor, selecione um hd");
+                        break;
                     case "tree":
                         if (!String.IsNullOrEmpty(hdSelecionado))
                         {

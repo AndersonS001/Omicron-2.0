@@ -1,13 +1,30 @@
 ﻿{
   "NomeHd": "hd1",
-  "Tamanho": 32768,
+  "Tamanho": 131072,
   "Imagem": {},
   "StatusHd": {
     "EspacoUtilizadoDiretorio": 0,
     "EspacoUtilizadoArquivo": 0,
-    "NumeroPasta": 0,
+    "NumeroPasta": 2,
     "NumeroArquivos": 0
   },
   "Arquivos": [],
-  "Diretorio": []
+  "Diretorio": [
+    {
+      "NomeDiretorio": "pasta1",
+      "Arquivos": [],
+      "SubPasta": [
+        {
+          "NomeDiretorio": "pasta2",
+          "Arquivos": [
+            {
+              "NomeArquivo": "a",
+              "ValorArquivo": "jdkdjl"
+            }
+          ],
+          "SubPasta": []
+        }
+      ]
+    }
+  ]
 }

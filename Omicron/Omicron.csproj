@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Acoes\Cd.cs" />
+    <Compile Include="Acoes\Copy.cs" />
     <Compile Include="Acoes\CopyFrom.cs" />
     <Compile Include="Acoes\CopyTo.cs" />
     <Compile Include="Acoes\Create.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="Acoes\FormatHd.cs" />
     <Compile Include="Acoes\Help.cs" />
     <Compile Include="Acoes\Mkdir.cs" />
+    <Compile Include="Acoes\Move.cs" />
     <Compile Include="Acoes\RemoveHd.cs" />
     <Compile Include="Acoes\RenameArq.cs" />
     <Compile Include="Acoes\RenameDir.cs" />

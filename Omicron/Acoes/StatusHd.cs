@@ -2,6 +2,7 @@
 using System;
 using System.IO;
 using System.Reflection;
+using System.Threading.Tasks;
 
 namespace Omicron.Acoes
 {
@@ -18,14 +19,13 @@ namespace Omicron.Acoes
             {
                 var json = sr.ReadToEnd();
                 deserializedProduct = JsonConvert.DeserializeObject<HD>(json);
-                tam = deserializedProduct.Tamanho * 1000;
+                tam = deserializedProduct.Tamanho;
                 espacoUtilizado = json.Length;
             }
 
-
-            Console.WriteLine("Capacidade Total do HD: " + tam);
-            Console.WriteLine("Espaço Utilizado  do HD: " + espacoUtilizado);
-            Console.WriteLine("Espaço Livre  do HD: " + (tam - espacoUtilizado));
+            Console.WriteLine("Capacidade Total do HD: " + tam +"KB");
+            Console.WriteLine("Espaço Utilizado  do HD: " + espacoUtilizado + "KB");
+            Console.WriteLine("Espaço Livre  do HD: " + (tam - espacoUtilizado + "KB"));
             Console.WriteLine("Número de Pastas: " + deserializedProduct.StatusHd.NumeroPasta);
             Console.WriteLine("Número de Arquivos: " + deserializedProduct.StatusHd.NumeroArquivos);
         }
