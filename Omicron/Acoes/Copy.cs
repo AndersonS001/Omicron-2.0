@@ -138,6 +138,7 @@ namespace Omicron.Acoes
                     {
                         arquivo = item2.Arquivos.Find(x => x.NomeArquivo.Equals(copyFrom));
                         pasta = item2.SubPasta.Find(x => x.NomeDiretorio.Equals(copyFrom));
+                        break;
                     }
                 }
 

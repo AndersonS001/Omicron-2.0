@@ -193,9 +193,12 @@ namespace Omicron.Acoes
                         foreach (var item3 in item2.SubPasta)
                         {
                             arquivo = item3.Arquivos.Find(x => x.NomeArquivo.Equals(moveFrom));
-                            item2.Arquivos.Remove(arquivo);
+                            item3.Arquivos.Remove(arquivo);
                             pasta = item3.SubPasta.Find(x => x.NomeDiretorio.Equals(moveFrom));
                             item3.SubPasta.Remove(pasta);
+
+                            if(pasta != null || arquivo != null)
+                                break;
                         }
                     }
                 }

@@ -30,3 +30,12 @@ C:\Users\ander\source\repos\Omicron-2.0\Omicron\obj\Debug\Omicron.csproj.CoreCom
 C:\Users\ander\source\repos\Omicron-2.0\Omicron\obj\Debug\Omicron.csproj.CopyComplete
 C:\Users\ander\source\repos\Omicron-2.0\Omicron\obj\Debug\Omicron.exe
 C:\Users\ander\source\repos\Omicron-2.0\Omicron\obj\Debug\Omicron.pdb
+C:\Users\unifmasilva\Downloads\Omicron-2.0-master\Omicron\bin\Debug\Omicron.exe.config
+C:\Users\unifmasilva\Downloads\Omicron-2.0-master\Omicron\bin\Debug\Omicron.exe
+C:\Users\unifmasilva\Downloads\Omicron-2.0-master\Omicron\bin\Debug\Omicron.pdb
+C:\Users\unifmasilva\Downloads\Omicron-2.0-master\Omicron\bin\Debug\Newtonsoft.Json.dll
+C:\Users\unifmasilva\Downloads\Omicron-2.0-master\Omicron\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\unifmasilva\Downloads\Omicron-2.0-master\Omicron\bin\Debug\Newtonsoft.Json.xml
+C:\Users\unifmasilva\Downloads\Omicron-2.0-master\Omicron\obj\Debug\Omicron.csproj.CoreCompileInputs.cache
+C:\Users\unifmasilva\Downloads\Omicron-2.0-master\Omicron\obj\Debug\Omicron.exe
+C:\Users\unifmasilva\Downloads\Omicron-2.0-master\Omicron\obj\Debug\Omicron.pdb
